@@ -1,0 +1,29 @@
+{
+  "common": {
+    "send": "发送",
+    "clear": "清除",
+    "settings": "设置",
+    "theme": "主题",
+    "language": "语言",
+    "model": "模型"
+  },
+  "chat": {
+    "placeholder": "输入您的消息...",
+    "thinking": "思考中...",
+    "error": "发生错误，请重试",
+    "welcome": "欢迎使用LLM聊天助手",
+    "newChat": "新建聊天"
+  },
+  "themes": {
+    "tokyoNight": "东京夜晚",
+    "tokyoNightLight": "东京夜晚浅色"
+  },
+  "models": {
+    "deepseek": "DeepSeek",
+    "chatgpt": "ChatGPT"
+  },
+  "languages": {
+    "chinese": "中文",
+    "english": "English"
+  }
+}

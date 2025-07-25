@@ -1,0 +1,29 @@
+{
+  "common": {
+    "send": "Send",
+    "clear": "Clear",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "model": "Model"
+  },
+  "chat": {
+    "placeholder": "Type your message...",
+    "thinking": "Thinking...",
+    "error": "An error occurred, please try again",
+    "welcome": "Welcome to LLM Chat Assistant",
+    "newChat": "New Chat"
+  },
+  "themes": {
+    "tokyoNight": "Tokyo Night",
+    "tokyoNightLight": "Tokyo Night Light"
+  },
+  "models": {
+    "deepseek": "DeepSeek",
+    "chatgpt": "ChatGPT"
+  },
+  "languages": {
+    "chinese": "中文",
+    "english": "English"
+  }
+}
