@@ -22,7 +22,7 @@ jobs:
         password: "${{ secrets.ACR_PASSWORD }}"
     - name: Build and push image
       env:
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: latest
       run: |
         docker build -t ${{ secrets.ACR_SERVER }}/llm-caht/llm-chat:$IMAGE_TAG .
         docker push ${{ secrets.ACR_SERVER }}/llm-caht/llm-caht:$IMAGE_TAG
