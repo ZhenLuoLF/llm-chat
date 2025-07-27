@@ -1,0 +1,28 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login to ACR
+      uses: aliyun/acr-login@v1
+      with:
+        login-server: ${{ secrets.ACR_SERVER }}
+        username: "${{ secrets.ACR_USERNAME }}"
+        password: "${{ secrets.ACR_PASSWORD }}"
+    - name: Build and push image
+      env:
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        docker build -t ${{ secrets.ACR_SERVER }}/llm-caht/llm-chat:$IMAGE_TAG .
+        docker push ${{ secrets.ACR_SERVER }}/llm-caht/llm-caht:$IMAGE_TAG
